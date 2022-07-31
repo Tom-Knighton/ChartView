@@ -106,7 +106,8 @@ public struct LineChartView: View {
                          showIndicator: self.$showIndicatorDot,
                          minDataValue: .constant(nil),
                          maxDataValue: .constant(nil),
-                         gradient: self.style.gradientColor
+                         gradient: self.style.gradientColor,
+                         lineDropGradient: self.style.lineDropGradientColor ?? GradientColor(start: Colors.GradientUpperBlue, end: .white)
                     )
                 }
                 .frame(width: frame.width, height: frame.height)
